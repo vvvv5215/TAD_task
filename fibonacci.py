@@ -1,7 +1,7 @@
 n = int(input("Enter which fibonacci number you want to find: "))
 
 def fibonacci(n):
-    #base case
+    #base case 1
     if n <= 0:
         return 0
     #base case

@@ -74,6 +74,6 @@ print(fibonacci_recursive(10))  # Output: 55
 
 ## Notes
 
-- The iterative implementation is more efficient for large numbers
+- We have used an interative approach which is has better btime complexity
 - The recursive implementation is simpler but has exponential time complexity
 - For very large numbers, you might want to use memoization or dynamic programming to optimize the recursive solution

@@ -1,14 +1,13 @@
-n = int(input("Enter which fibonacci number you want to find: "))
-
 def fibonacci(n):
-    #base case 1
     if n <= 0:
-        return 0
-    #base case
+        return 0 #base case 1
     elif n == 1:
-        return 1
+        return 1 #base case 2
     else:
-        #recursive case
-        return fibonacci(n-1) + fibonacci(n-2)
+        a, b = 0, 1
+        for _ in range(2, n + 1):
+            a, b = b, a + b
+        return b
 
-print("The", n, "th fibonacci number is", fibonacci(n))
+n = int(input("Enter which fibonacci number you want to find: "))
+print(fibonacci(n))
